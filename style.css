@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* 
+font-family: 'Kumbh Sans', sans-serif;
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    padding: 148px 24px 85px 24px;
+}
+
+.box{
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 560px;
+}
+
+#womanmobile{
+    width: 237px;
+    margin-top: -214px;
+    margin-bottom: 60px;
+}
+
+#mobilepattern{
+    width: 240px;
+}
+
+#faq{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E1F36;
+    margin-bottom: 40px;
+}
+
+.questions{
+    padding: 0 25px;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question svg{
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.question h2{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4C5F;
+    width: 235px;
+}
+#answer{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #787887;
+    margin-top: 13px;
+}
+
+.questionbox{
+    border-bottom: 1px solid #E8E8EA;
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 17px;
+}
+
+.hide{
+    display: none;
+}
+
+#last{
+    margin-bottom: 48px;
+}
+
+#faq{
+    margin-left: 105px;
+}
+
+.desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box{
+        width: 920px;
+        height: 509px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+        z-index: 1;
+        padding-right: 95px;
+    }
+
+    #faq{
+        margin-left: 0;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    #boxdesktop{
+        position: absolute;
+        left: -93px;
+        top: -25px;
+    }
+    
+    #womandesktop{
+        position: absolute;
+        left: -83px;
+    }
+
+    .box-wrapper{
+        position: fixed;
+        z-index: 4;
+    }
+
+    #desktoppattern{
+        position: absolute;
+        left: -576px;
+        top: -294px;
+    }
+
+    .questions{
+        margin-left: auto;
+        max-width: 330px;
+    }
+}
